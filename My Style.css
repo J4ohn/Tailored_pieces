@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	} 
+
+a { color: inherit; }
+
+.content{
+	margin-left: 40px; 
+	margin-right: 40px;
+	}
+
+h2{
+	color: #935400; 
+	font-size: 40px; 
+	font-style: italic;
+	}
+
+span{
+	font-style: oblique;
+	color: #935400;
+	}
+
+.main{
+	border-color:#230C0C; 
+	border-style:outset; 
+	border-radius: 20px; 
+	float:right; 
+	height: 545px; 
+	width: 78%; 
+	box-shadow: 0 10px 40px #F9BA29, 0 0 0 20px #ffffffeb; 
+	overflow: scroll;
+	}
+
+#bottom{
+	align-content: center; 
+	height: 30px; 
+	text-align: center; 
+	border-top-style: double; 
+	border-top-color:#000000;
+}
