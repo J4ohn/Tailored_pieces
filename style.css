@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c3ecf5, #e6e6fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Section Styling */
+  .contact-section {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Form Wrapper */
+  .form-wrapper {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Heading */
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .contact-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    margin-bottom: 1.3rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #0077ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.2);
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #0077ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005fcc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form-wrapper {
+      padding: 2rem 1.5rem;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-form p {
+      font-size: 0.9rem;
+    }
+  }  
