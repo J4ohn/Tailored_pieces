@@ -177,7 +177,8 @@
   /* Home Page Specific */
   .homepg h1 {
     color: var(--accent-color);
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
   }
   
   .homepg hr {
