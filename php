@@ -7,11 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = strip_tags(trim($_POST["message"]));
     
     // Validate data
-    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+   if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
         exit;
-    }
+
+
+}
     
     // Set recipient email (replace with your email)
     $recipient = "superuser@gmail.com";
