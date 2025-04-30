@@ -12,10 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Please complete the form and try again.";
         exit;
 
-
 }
-
-    
+ 
     // Set recipient email (replace with your email)
     $recipient = "superuser@gmail.com";
     
