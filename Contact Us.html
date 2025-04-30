@@ -59,14 +59,14 @@
       <p>We are eagerly waiting to hear from you</p>
 
       <div class="form-wrapper">
-        <form class="contact-form" id="contactForm" method="POST" action="php.php">
+        <form class="contact-form" id="contactForm" method="POST" action="index.php">
           <div class="input-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" />
           </div>
           <div class="input-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email"  />
           </div>
           <div class="input-group">
             <label for="subject">Subject</label>
@@ -76,7 +76,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button type="submit" id="submitBtn">Send Message</button>
           <p class="form-message" id="formMessage"></p>
         </form>
       </div>

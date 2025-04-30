@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+   //form validation
+   document.getElementById("submitBtn").addEventListener("click",function(submit){
+    submit.preventDefault();
+    let isvalid = true;
+    let name = document.getElementById("name");
+  let email = document.getElementById("email");
+  let namePattern =/^[A-Za-z\s]+$/;
+  if(name.value.trim()==="" || !namePattern.test(name.value)){
+    alert ("Please Enter your name:");
+    isvalid = false;
+  }
+  if(isvalid){
+    alert("Massege send");
+    document.getElementById("contactForm").submit();
+    window.window.location.href="Home.html";
+  }
+
+  });
   // Mobile menu toggle
   const menu = document.querySelector('.menu');
   const navList = document.querySelector('.nav-list');
@@ -26,5 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formMessage.textContent = '';
       }, 5000);
     });
-  }
-});
+  };
+ 
+  
+ });
