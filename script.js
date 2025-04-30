@@ -29,8 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   });
  }
- // Mobile menu toggle
-const menu = document.querySelector('.menu');
+ 
+});
+
+//Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function(){
+  const menu = document.querySelector('.menu');
 const navList = document.querySelector('.nav-list');
 
 if (menu && navList) {
