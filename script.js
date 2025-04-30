@@ -1,21 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
    //form validation
-   document.getElementById("submitBtn").addEventListener("click",function(submit){
-    submit.preventDefault();
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
     let isvalid = true;
     let name = document.getElementById("name");
-  let email = document.getElementById("email");
-  let namePattern =/^[A-Za-z\s]+$/;
+    let email = document.getElementById("email");
+    let namePattern =/^[A-Za-z\s]+$/;
+     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if(name.value.trim()==="" || !namePattern.test(name.value)){
     alert ("Please Enter your name:");
     isvalid = false;
   }
+  if (email.value.trim() ==="" || !emailPattern.test(email.value)){
+    alert("Please enter a valid email address.");
+    isvalid = false;
+  }
+ 
   if(isvalid){
     alert("Massege send");
-    document.getElementById("contactForm").submit();
-    window.window.location.href="Home.html";
-  }
+     // Simulate successful submission message
+     formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+     contactForm.reset();
 
+     setTimeout(() => {
+       formMessage.textContent = '';
+     }, 5000);
+  
+  }
   });
   // Mobile menu toggle
   const menu = document.querySelector('.menu');
@@ -27,24 +39,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
   }
-
-  // Form submission handling
-  const contactForm = document.getElementById('contactForm');
-  const formMessage = document.getElementById('formMessage');
   
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Simulate form submission
-      formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
-      contactForm.reset();
-      
-      setTimeout(() => {
-        formMessage.textContent = '';
-      }, 5000);
-    });
-  };
- 
-  
- });
+ }});
