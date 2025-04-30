@@ -380,6 +380,7 @@
     
     .nav-list.active {
       left: 0;
+      display: flex;
     }
     .navbar {
       flex-direction: column;

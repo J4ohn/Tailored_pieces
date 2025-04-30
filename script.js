@@ -26,18 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
      setTimeout(() => {
        formMessage.textContent = '';
      }, 5000);
-  
   }
   });
-  // Mobile menu toggle
-  const menu = document.querySelector('.menu');
-  const navList = document.querySelector('.nav-list');
+ }
+ // Mobile menu toggle
+const menu = document.querySelector('.menu');
+const navList = document.querySelector('.nav-list');
+
+if (menu && navList) {
+  menu.addEventListener('click', function(e) {
+    navList.classList.toggle('active');
+  });
   
-  if (menu && navList) {
-    menu.addEventListener('click', function() {
-      navList.classList.toggle('active');
-    });
-    
-  }
-  
- }});
+}
+});
