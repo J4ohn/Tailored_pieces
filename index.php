@@ -1,4 +1,24 @@
 <?php
+host = "localhost";
+$username = "root";
+$password = "";
+$database = "tailored_pieces_db";
+$conn = new mysqli($host, $username, $password, $database);
+if ($conn->connect_error){
+    die("Connection failed:".$conn->connect_error);
+}
+echo "Connected successfully";
+$sql = "SELECT*FROM Garments";
+$result = $conn->query($sql);
+if($result->num_rows>0) {
+    echo "Name".
+    $row["name"]. " - Email: " . $row["email"]. "<br>";
+   }
+}else{
+    echo "0 results";
+}
+$conn->closed();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = strip_tags(trim($_POST["name"]));
