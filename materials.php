@@ -1,7 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+
 // Declaration and assignment of parameters
 $db_server = "localhost";
 $db_user = "root";
@@ -45,4 +44,3 @@ if ($result->num_rows > 0) {
 // Close the connection
 mysqli_close($conn);
 ?>
-

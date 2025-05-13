@@ -6,6 +6,17 @@
   <title>Tailored_Pieces_Ug</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
+  <script>
+  fetch('index.php')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('materialsTable').innerHTML = data;
+    })
+    .catch(error => {
+      document.getElementById('materialsTable').innerHTML = 'Error loading data.';
+      console.error('Error fetching materials:', error);
+    });
+</script>
 </head>
 <body>
   <nav class="navbar">
@@ -74,6 +85,7 @@
       </div>
     </div>
   </section>
+  <div id="materialsTable" style="text-align:center;">Loading...</div>
 
   <footer>
     <div class="bottom_bar">
