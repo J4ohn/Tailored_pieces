@@ -42,11 +42,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "<p>No materials found.</p>";
 }
-<<<<<<< HEAD
 // Close the connection
 mysqli_close($conn);
 ?>
 
-=======
-}?>
->>>>>>> c93d4b6109ad7d59ceb2534a85331502c0f2259d
