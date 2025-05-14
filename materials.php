@@ -1,6 +1,5 @@
 <?php
 
-
 // Declaration and assignment of parameters
 $db_server = "localhost";
 $db_user = "root";
