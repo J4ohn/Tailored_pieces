@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cca7511966ee37d24acee813f72466f7b8e6735f
 // Declaration and assignment of parameters
 $db_server = "localhost";
 $db_user = "root";
